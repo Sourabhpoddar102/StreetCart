@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to StreetCart.</title>
+  
+    <!-- Google Fonts -->
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/458da55f13.js" crossorigin="anonymous"></script>
+
+
+    <!-- BootStrap  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+   <!-- Favicon  -->
+    <link rel="icon" href="favicon/favicon.ico" sizes="16x16" >
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+
+    <!-- Fontawesome Style  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Chatbot -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+  <i class="fa-solid fa-store"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can we help you" name="category">
+        <option value="StreetCart">Regarding StreetCart?</option>
+        <option value="Application">Any Other issue?</option>
+      </select>
+      
+      <div data-conv-fork="category">
+        <div data-conv-case="StreetCart">
+          <select data-conv-question="Tell us your query!" name="category">
+            <option value="sc">Why use StreetCart?</option>
+            <option value="how">Where to get the app?</option>
+          </select>
+          <div data-conv-fork="category">
+          <div data-conv-case="sc">
+            <input type="text" data-conv-question="StreetCart is a user-friendly application where you can get all your basic needs,that are available locally, at your fingertips" data-no-answer="true">
+          </div>
+          <div data-conv-case="how">
+            <input type="text" data-conv-question="Download the app at playstore or use the link given in the GET THE APP section!" data-no-answer="true">
+          </div>
+        </div>
+        </div>
+        <div data-conv-case="Application" data-conv-fork="first-question2">
+          
+          <input type="text" name="companyName" data-conv-question="Please access the contact us section!">
+        </div>
+      </div>
+      <input type="text" name="name" data-conv-question="Any other query?">
+      <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+      <input type="text" data-conv-question="Hi {name},<br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Confirm</option>
+      </select>
+      <input type="text" data-conv-question="Thank you for using StreetCart!." data-no-answer="true">
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+       <!-- Nav Bar -->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href=""> <span class="Street">STREET</span><span class="Cart">CART </span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+          <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+        </svg></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            
+            <a class="nav-link active"  href="index.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+            </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#app-id">Get the App <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg></a>
+          </li>
+          
+        </ul>
+
+    </div> 
+    </nav>
+    
+    <section class="colored-section" id="title">
+     
+      <!-- Title -->
+    <div class="row">
+        <div class="col-lg-6">
+          <h1>Welcome to StreetCart, place where you will find all your basic needs!!</h1>
+          
+          <button type="button" class="btn btn-outline-dark btn-lg download-button"><i class="fab fa-google-play"></i><a href="construct.html">Download</button></a>
+          
+        </div>
+        <div class="col-lg-6">
+
+            <img class="title-image" src="img/preview.png" alt="">
+        </div>
+    </div>
+
+
+      </section>
+
+      <section class="white-section1" id="features">
+
+        <div class="container-fluid">
+    
+          <div class="row">
+            <div class="feature-box col-lg-4">
+              <i class="icon fas fa-check-circle fa-4x"></i>
+              <h3 class="feature-title">Easy to use.</h3>
+              <p>So easy to use, anyone could do it.</p>
+            </div>
+    
+            <div class="feature-box col-lg-4">
+              <i class="icon fas fa-bullseye fa-4x"></i>
+              <h3 class="feature-title">Trust Worthy</h3>
+              <p>We will abide by our privacy.</p>
+            </div>
+    
+            <div class="feature-box col-lg-4">
+              <i class="icon fas fa-heart fa-4x"></i>
+              <h3 class="feature-title">Guaranteed to work.</h3>
+              <p>Find your intrested product at your finger tip.</p>
+            </div>
+          </div>
+    
+    
+        </div>
+      </section>
+      
+    
+        
+      
+      <!-- Carousel -->
+
+  <section class="carousel-section" id="carousel" >
+
+    <div id="vendor-carousel" class="carousel slide carousel-fade" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <img class="vendor-image" src="img/Deepak.jpg" alt="Deepak">
+          <h2 class="vendor-text">“I’m having two food stalls opposite to Poddar school. 
+            I’m already using some online platform for selling my food items but I’m not satisfied with their service. 
+            They purchase food from me at a low price and sell it at a higher price which is reducing my customer count. 
+            If there could be an app where I could directly sell my food to the customers at original price, 
+            then I can increase my customer count!”</h2>
+          
+          <em><b>-Deepak</b></em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <img class="vendor-image" src="img/Santosh.jpg" alt="Santosh">
+          <h2 class="vendor-text">“My daily earning come from selling egg rice on the roadside. 
+            Egg rice, which is the most loved food in our city. 
+            Due to recent ongoing Covid situation, I had to shut the shop for many days and if affected a lot to my earnings, 
+            so if there could be an app which helps me to connect with the customers from home so that the bond between egg rice 
+            and the dharwadians never loose!” </h2>
+          
+          <em>-Santosh</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <img class="vendor-image" src="img/Gangavva.jpg" alt="Ganguabai">
+          <h2 class="vendor-text">“I sell fresh flowers daily from morning till evening. 
+            Though there is no much material investment involved, it takes a lot of effort to run the business. 
+            As it’s a common business there is lot of competition, due to which we have to fight for customers 
+            and also in addition I have to pay penalty to government. 
+            I want an app which will make it more easy for me to sell from home and avoid wastage of flowers.”   </h2>
+          
+          <em>-Gangavva</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <img class="vendor-image" src="img/Prem.jpg" alt="Prem Gujjar">
+          <h2 class="vendor-text">“I have been selling ice cream at the roadside near kelgeri circle. 
+            I am not a local resident to the same city where I work. 
+            As a street vendor I have always been migrating which costs me a lot and in return there is a no as such profit for me 
+            as I have to cover a lot of expenses which includes the vehicle expenses as well. 
+            I want an app which will provide a list of all my products to customers.”  </h2>
+          
+          <em>-Prem Gujjar</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#vendor-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#vendor-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </section>
+
+
+  
+  <section class="bg-light text-dark" id="app-id">
+
+    <div class="container-fluid">
+     
+
+      <h3 class="big-heading">So, get the app today.</h3>
+      <button class="download-button btn btn-outline-dark brn-dark" type="button"><i class="fab fa-google-play"></i><a href="construct.html">Download</button></a>
+    
+     
+    </div>
+    
+  </section>
+
+   <!-- Footer -->
+
+   <footer class="bg-dark text-light" id="footer">
+    <div class="container-fluid">
+      
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <a href="contact.html"><i class="social-icon fas fa-envelope"></i></a>
+     <a href="Docs/Minor Report.pdf" download="Help"><i class="social-icon fa fa-file"></i></a> 
+     
+      
+      <p>© Copyright 2022 StreetCart</p>
+      
+    </div>
+  </footer>
+
+
+     </body> 
+</html>
+
+

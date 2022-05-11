@@ -1,0 +1,206 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat-Bold";
+  }
+
+.Street{
+    color: yellow;
+   
+}
+.Cart{
+    color: whitesmoke;
+}
+
+
+.navbar-brand{
+    font-family: 'Hurricane', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+} 
+
+.navbar {
+  padding: 0 0 1.5rem;
+  
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+.colored-section {
+    background-color: #D3E12C;
+    color: #fff;
+    padding: 0px 0px 100px 0px;
+  }
+
+
+  /* Buttons */
+
+.download-button {
+    margin: 5% 3% 5% 0;
+  }
+
+  .title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    top: 80px;
+    right: 15%;
+    height: 400px;
+    position: absolute;
+  }
+
+
+  @media (max-width: 1028px) {
+
+    #title {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+  }
+
+  
+#title {
+    background-color: #D3E12C;
+    color: #fff;
+   text-align: left;
+   padding: 3% 15% 7%;
+}
+
+.carousel{
+  background-color: #D3E12C;
+  
+}
+
+.vendor-image {
+  width: 60%;
+  height: 480px;
+  padding-top: 3%;
+  
+}
+
+#features{
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 7% 15%;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #98f54d;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #6ff516;
+}
+
+
+#pricing {
+  padding: 100px;
+}
+
+
+.service-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.service-column {
+  padding: 3% 2%;
+}
+
+.white-section {
+  background-color: #fff;
+  background-image: url('/img/Gangavva.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+
+.social-icon {
+  margin: 20px 10px;
+  color: black;
+}
+
+
+.feedbacks{
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact{
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 0 0 1.5rem; 
+  
+}
+
+.chat_icon{
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	z-index: 1000;
+	padding: 0;
+	font-size: 80px;
+	color: rgb(154, 60, 60);
+	cursor: pointer;
+}
+.chat_box{
+	width: 400px;
+	height: 80vh;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	background:#dedede;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform: scaleY(0);
+}
+.chat_box.active{
+	transform: scaleY(1);
+}
+#messages{
+	padding: 20px;
+}
+.my-conv-form-wrapper textarea{
+	height: 30px;
+	overflow: hidden;
+	resize: none;
+}
+.hidden{
+	display: none !important;
+}
+ul { 
+	
+	text-align: left; 
+	}
